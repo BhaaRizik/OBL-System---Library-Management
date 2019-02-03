@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="520.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InformationSubscriberlibrarianController">
+   <bottom>
+      <AnchorPane prefHeight="542.0" prefWidth="463.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="40.0" layoutY="14.0" text="Subscriber Information" textFill="#b51d1d">
+               <font>
+                  <Font name="Arial Nova Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="124.0" text="Name " />
+            <Label layoutX="43.0" layoutY="174.0" text="Id Subscriber" />
+            <Label layoutX="43.0" layoutY="431.0" text="Subscribr Number" />
+            <Label layoutX="43.0" layoutY="379.0" text="Subscriber Status" />
+            <Label layoutX="43.0" layoutY="324.0" text="Subscriber Address" />
+            <Label layoutX="43.0" layoutY="271.0" text="Phone Number" />
+            <Label layoutX="43.0" layoutY="222.0" text="Emil " />
+            <TextField fx:id="NameText" disable="true" layoutX="165.0" layoutY="120.0" />
+            <TextField fx:id="AddressText" disable="true" layoutX="165.0" layoutY="320.0" />
+            <TextField fx:id="EmailText" disable="true" layoutX="164.0" layoutY="218.0" />
+            <TextField fx:id="IdSubscriberText" disable="true" layoutX="165.0" layoutY="170.0" />
+            <TextField fx:id="SubscriberNumber" disable="true" layoutX="164.0" layoutY="427.0" />
+            <TextField fx:id="PhoneNumberText" disable="true" layoutX="164.0" layoutY="268.0" />
+            <Button layoutX="33.0" layoutY="482.0" mnemonicParsing="false" onAction="#BackMth" prefHeight="20.0" prefWidth="90.0" text="Back">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="EditButtonLabel" layoutX="344.0" layoutY="482.0" mnemonicParsing="false" onAction="#EditMaeth" prefHeight="20.0" prefWidth="90.0" text="Edit" textOverrun="CLIP" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="SaveButtonlabel" layoutX="342.0" layoutY="480.0" mnemonicParsing="false" onAction="#SaveMeth" prefHeight="34.0" prefWidth="88.0" text="Save" textFill="#a42b5c" underline="true" visible="false">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="SubscriberStatusCombox" disable="true" layoutX="165.0" layoutY="375.0" prefWidth="150.0" />
+            <Line disable="true" endX="245.0" layoutX="174.0" layoutY="88.0" startX="-122.0" stroke="#a12525" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

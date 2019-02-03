@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="495.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Button fx:id="ViewProfileSubscriber" layoutX="25.0" layoutY="204.0" onAction="#ViewSubscriberProfileMeth" prefHeight="25.0" prefWidth="140.0" text="View Subscriber Card" />
+      <Label layoutX="181.0" layoutY="33.0" prefHeight="57.0" prefWidth="362.0" text="Librarian Profile" textFill="#943030">
+         <font>
+            <Font name="Arial Nova Bold" size="46.0" />
+         </font>
+      </Label>
+      <Button fx:id="ReturnBookButton" layoutX="299.0" layoutY="292.0" mnemonicParsing="false" onAction="#ReturnBookMeth" prefHeight="30.0" prefWidth="129.0" text="Return a Book" />
+      <Button fx:id="LeendingBookButton" layoutX="420.0" layoutY="292.0" mnemonicParsing="false" onAction="#LeendingBookMeth" prefHeight="30.0" prefWidth="129.0" text="Loan a book" />
+      <Button fx:id="logoutButton" layoutX="24.0" layoutY="91.0" mnemonicParsing="false" onAction="#LogoutMeth" prefHeight="19.0" prefWidth="65.0" text="Logout" />
+      <Button fx:id="AddNewSubscriberLabel" layoutX="24.0" layoutY="163.0" mnemonicParsing="false" onAction="#AddNewSubscriberMeth" prefHeight="25.0" prefWidth="124.0" text="Add New Subscriber" />
+      <Button fx:id="ViewProfileButton" layoutX="24.0" layoutY="128.0" mnemonicParsing="false" onAction="#ViewProfileMeth" prefHeight="25.0" prefWidth="85.0" text="View Profile" />
+      <Button layoutX="14.0" layoutY="292.0" mnemonicParsing="false" onAction="#AddNewBook" prefHeight="30.0" prefWidth="140.0" text="Add New Book" />
+      <Button layoutX="531.0" layoutY="292.0" mnemonicParsing="false" onAction="#RemoveBookMeth" prefHeight="30.0" prefWidth="110.0" text="Remove Book" />
+      <Button layoutX="136.0" layoutY="292.0" mnemonicParsing="false" onAction="#UpdatedetailsBookMeth" prefHeight="30.0" prefWidth="181.0" text="Search &amp; Update details Book " />
+      <Label fx:id="NameLibLibrarian" layoutX="16.0" layoutY="18.0" prefHeight="25.0" prefWidth="260.0">
+         <font>
+            <Font name="Bodoni MT" size="19.0" />
+         </font>
+      </Label>
+      <Line endX="470.0" layoutX="130.0" layoutY="262.0" startX="-71.0" stroke="#a42525" strokeWidth="3.0" />
+      <TextField fx:id="IdSubscriberText" layoutX="173.0" layoutY="204.0" prefHeight="25.0" prefWidth="286.0" promptText="To show Profile Subscriber Enter The Id Subscriber" />
+      <Label fx:id="SubscriberNotFoundedLabel" layoutX="222.0" layoutY="232.0" prefHeight="19.0" prefWidth="201.0" text=" The Subscriber Not Founded!i!i!i!i!" textFill="RED" visible="false" />
+      <Button layoutX="16.0" layoutY="351.0" mnemonicParsing="false" onAction="#ExtensionBook" prefHeight="30.0" prefWidth="124.0" text="Extension a Book" />
+      <Button fx:id="viewOrders" layoutX="136.0" layoutY="351.0" mnemonicParsing="false" onAction="#viewOrdersMethod" prefHeight="30.0" prefWidth="102.0" text="View Orders" />
+   </children>
+</AnchorPane>

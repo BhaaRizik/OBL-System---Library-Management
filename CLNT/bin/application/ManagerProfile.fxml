@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="495.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ManagerProfileController">
+   <children>
+      <Button fx:id="ViewProfileSubscriber" layoutX="25.0" layoutY="230.0" onAction="#ViewSubscriberProfileMeth" prefHeight="25.0" prefWidth="150.0" text="Search Subscriber" />
+      <Label layoutX="181.0" layoutY="33.0" prefHeight="57.0" prefWidth="362.0" text="Manager Profile" textFill="#4153ae">
+         <font>
+            <Font name="Arial Nova Bold" size="46.0" />
+         </font>
+      </Label>
+      <Button fx:id="ReturnBookButton" layoutX="276.0" layoutY="289.0" mnemonicParsing="false" onAction="#ReturnBookMeth" prefHeight="30.0" prefWidth="129.0" text="Return a Book" />
+      <Button fx:id="LeendingBookButton" layoutX="395.0" layoutY="289.0" mnemonicParsing="false" onAction="#LeendingBookMeth" prefHeight="30.0" prefWidth="140.0" text="Loan a book" />
+      <Button fx:id="logoutButton" layoutX="24.0" layoutY="91.0" mnemonicParsing="false" onAction="#LogoutMeth" prefHeight="19.0" prefWidth="65.0" text="Logout" textFill="#2717da">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="AddNewSubscriberLabel" layoutX="24.0" layoutY="163.0" mnemonicParsing="false" onAction="#AddNewSubscriberMeth" prefHeight="25.0" prefWidth="130.0" text="Add New Subscriber" />
+      <Button fx:id="ViewProfileButton" layoutX="24.0" layoutY="128.0" mnemonicParsing="false" onAction="#ViewProfileMeth" prefHeight="25.0" prefWidth="85.0" text="View Profile" />
+      <Button layoutX="30.0" layoutY="289.0" mnemonicParsing="false" onAction="#AddNewBook" prefHeight="30.0" prefWidth="140.0" text="Add New Book" />
+      <Button layoutX="515.0" layoutY="289.0" mnemonicParsing="false" onAction="#RemoveBookMeth" prefHeight="30.0" prefWidth="110.0" text="Remove Book" />
+      <Button layoutX="63.0" layoutY="319.0" mnemonicParsing="false" onAction="#UpdatedetailsBookMeth" prefHeight="30.0" prefWidth="192.0" text="Search &amp; Update details Book " />
+      <Label layoutX="16.0" layoutY="18.0" prefHeight="30.0" prefWidth="140.0" text="Hello ,Manager">
+         <font>
+            <Font name="Bodoni MT" size="19.0" />
+         </font>
+      </Label>
+      <Line endX="470.0" layoutX="130.0" layoutY="271.0" startX="-71.0" stroke="#4153ae" strokeWidth="3.0" />
+      <TextField fx:id="IdSubscriberText" layoutX="183.0" layoutY="230.0" prefHeight="25.0" prefWidth="286.0" promptText="To show Profile Subscriber Enter The Id Subscriber" />
+      <Label fx:id="SubscriberNotFoundedLabel" layoutX="232.0" layoutY="204.0" prefHeight="19.0" prefWidth="201.0" text=" The Subscriber Not Founded!i!i!i!i!" textFill="RED" visible="false" />
+      <Button fx:id="RequestReportButton" layoutX="165.0" layoutY="289.0" mnemonicParsing="false" onAction="#RequestReportMeth" prefHeight="30.0" prefWidth="124.0" text="Request reports" />
+      <Button fx:id="btn" layoutX="243.0" layoutY="319.0" mnemonicParsing="false" onAction="#ExtensionBook" prefHeight="30.0" prefWidth="124.0" text="Extension a Book" />
+      <Button fx:id="ViewAllReports" layoutX="365.0" layoutY="319.0" mnemonicParsing="false" onAction="#ViewAllReportsMeth" prefHeight="30.0" prefWidth="157.0" text="View All Report's System" />
+      <Button layoutX="25.0" layoutY="196.0" mnemonicParsing="false" onAction="#ViewAllSubscriberMeth" prefHeight="25.0" prefWidth="140.0" text="View All Subscribers" />
+      <Button layoutX="326.0" layoutY="349.0" mnemonicParsing="false" onAction="#Report3" prefHeight="30.0" prefWidth="157.0" text="Latness of return reports" />
+      <Button layoutX="154.0" layoutY="349.0" mnemonicParsing="false" onAction="#sobhemethod" prefHeight="30.0" prefWidth="174.0" text="Duration of lending Reports" />
+   </children>
+</AnchorPane>

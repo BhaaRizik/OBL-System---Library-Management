@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddNewSubscriberController">
+   <center>
+      <AnchorPane prefHeight="424.0" prefWidth="498.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="31.0" prefHeight="57.0" prefWidth="465.0" text="Add New Subscriber" textFill="#b90e0e">
+               <font>
+                  <Font name="Arial Nova Bold" size="46.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="108.0" text="Name" />
+            <Label layoutX="27.0" layoutY="178.0" text="ID" />
+            <Label layoutX="25.0" layoutY="252.0" text="Email" />
+            <Label layoutX="250.0" layoutY="243.0" text="Adress" />
+            <Label layoutX="247.0" layoutY="178.0" text="N.o Subscriber" />
+            <Label layoutX="250.0" layoutY="108.0" text="N.o Phone" />
+            <TextField fx:id="NameText" layoutX="75.0" layoutY="104.0" />
+            <TextField fx:id="IdText" layoutX="75.0" layoutY="174.0" />
+            <TextField fx:id="EmailText" layoutX="75.0" layoutY="248.0" />
+            <TextField fx:id="AdressText" layoutX="335.0" layoutY="239.0" />
+            <TextField fx:id="NumberSubscriberText" layoutX="335.0" layoutY="174.0" />
+            <TextField fx:id="PhoneText" layoutX="335.0" layoutY="104.0" />
+            <Label fx:id="ResultLabel" layoutX="160.0" layoutY="297.0" text="The Subscriber Exists" textFill="#ff0505" visible="false">
+               <font>
+                  <Font name="Arial Nova Bold" size="21.0" />
+               </font>
+            </Label>
+            <Button fx:id="BackButton" layoutX="47.0" layoutY="349.0" mnemonicParsing="false" onAction="#BackMeth" prefHeight="37.0" prefWidth="101.0" text="Back" />
+            <Button fx:id="AddSubscriberButton" layoutX="353.0" layoutY="349.0" mnemonicParsing="false" onAction="#AddSubscriberMeth" prefHeight="37.0" prefWidth="101.0" text="Add Subscriber" />
+            <TextField fx:id="PasswordText" layoutX="335.0" layoutY="298.0" />
+            <Label layoutX="253.0" layoutY="302.0" text="Password" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

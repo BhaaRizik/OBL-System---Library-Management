@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoanReportController">
+   <bottom>
+      <AnchorPane prefHeight="676.0" prefWidth="945.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#ffd400" fontSmoothingType="LCD" layoutX="229.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lending Report">
+               <font>
+                  <Font name="System Bold" size="64.0" />
+               </font>
+            </Text>
+            <Text layoutX="59.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Requested Books :" wrappingWidth="221.0859375">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="56.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Normal books:" wrappingWidth="199.7265625">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="645.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="642.0" layoutY="498.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="645.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Median:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="642.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Median:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <TableView fx:id="requestTable" layoutX="48.0" layoutY="177.0" prefHeight="201.0" prefWidth="308.0" />
+            <TableView fx:id="normalTable" layoutX="38.0" layoutY="442.0" prefHeight="192.0" prefWidth="315.0" />
+            <BarChart fx:id="BarcharNormal" layoutX="342.0" layoutY="442.0" prefHeight="218.0" prefWidth="281.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <Button layoutX="27.0" layoutY="642.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="76.0" text="Back" />
+            <Text fx:id="avgRequest" layoutX="739.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="average req" wrappingWidth="106.0" />
+            <Text fx:id="MedianRequest" layoutX="739.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="median req" />
+            <Text fx:id="AvgNormal" layoutX="736.0" layoutY="496.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nirmal avg" />
+            <Text fx:id="medianNormal" disable="true" layoutX="734.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="med normal" />
+            <BarChart fx:id="BarcharRequest" layoutX="345.0" layoutY="179.0" prefHeight="218.0" prefWidth="281.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <Separator layoutX="59.0" layoutY="156.0" prefHeight="3.0" prefWidth="211.0" />
+            <Separator layoutX="48.0" layoutY="421.0" prefHeight="3.0" prefWidth="181.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddNewBookController">
+   <bottom>
+      <AnchorPane prefHeight="497.0" prefWidth="908.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="253.0" prefHeight="74.0" prefWidth="411.0" text="Add New Book" textFill="#c62929">
+               <font>
+                  <Font name="System Bold" size="56.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="126.0" text="Book Id" />
+            <Label layoutX="46.0" layoutY="211.0" text="Book Author Name" />
+            <Label layoutX="46.0" layoutY="254.0" text="Book Genre" />
+            <Label layoutX="46.0" layoutY="330.0" text="Book Description" />
+            <Label layoutX="560.0" layoutY="169.0" text="Book Copies" />
+            <Label layoutX="556.0" layoutY="216.0" text="Location Book" />
+            <Label layoutX="46.0" layoutY="169.0" text="Book Name" />
+            <Label layoutX="557.0" layoutY="263.0" text="Print Date" />
+            <TextField fx:id="BookAthorNameText" disable="true" layoutX="193.0" layoutY="207.0" prefHeight="25.0" prefWidth="170.0" promptText="Example : Jameel Othman" />
+            <TextField fx:id="BookIdText" layoutX="193.0" layoutY="121.0" prefHeight="25.0" prefWidth="170.0" promptText="Example: 155848" />
+            <TextField fx:id="BookNameText" disable="true" layoutX="193.0" layoutY="165.0" prefHeight="25.0" prefWidth="170.0" promptText="Example:  Sun White" />
+            <TextField fx:id="BookGenreTtext" disable="true" layoutX="193.0" layoutY="251.0" prefHeight="25.0" prefWidth="170.0" promptText="Example: History" />
+            <TextField fx:id="BookCopiesText" disable="true" layoutX="704.0" layoutY="165.0" prefHeight="25.0" prefWidth="170.0" promptText="Example: 6,7,8,99,10..." />
+            <TextField fx:id="LocationBookText" disable="true" layoutX="704.0" layoutY="212.0" prefHeight="25.0" prefWidth="170.0" promptText="Example: floor 2" />
+            <TextField fx:id="PrintDateText" disable="true" layoutX="703.0" layoutY="259.0" prefHeight="25.0" prefWidth="170.0" promptText="Example: 1/1/1758" />
+            <Button fx:id="CheckBookButton" layoutX="369.0" layoutY="121.0" mnemonicParsing="false" onAction="#CheckIfFoundMeth" prefHeight="16.0" prefWidth="115.0" text="Check If available" />
+            <Button layoutX="46.0" layoutY="422.0" mnemonicParsing="false" onAction="#BackMeth" prefHeight="37.0" prefWidth="71.0" text="Back" />
+            <Button fx:id="AddNewBookButton" layoutX="775.0" layoutY="428.0" mnemonicParsing="false" onAction="#AddNewBoKmeth" prefHeight="38.0" prefWidth="99.0" text="Add New Book" />
+            <TextArea fx:id="BookDescriptionText" disable="true" layoutX="192.0" layoutY="295.0" prefHeight="85.0" prefWidth="286.0" promptText="Example: I want book Histroy" />
+            <Label layoutX="556.0" layoutY="306.0" text="catalog Number" />
+            <Label layoutX="555.0" layoutY="352.0" text="purchase Date" />
+            <TextField fx:id="catalogNumberText" disable="true" layoutX="704.0" layoutY="302.0" prefHeight="25.0" prefWidth="170.0" promptText="Example: 1,2,5,10..." />
+            <TextField fx:id="purchaseDateText" disable="true" layoutX="704.0" layoutY="347.0" prefHeight="25.0" prefWidth="168.0" promptText="Example: 10/5/1992" />
+            <Label fx:id="BookFoundedInLibLabel" layoutX="167.0" layoutY="89.0" prefHeight="17.0" prefWidth="259.0" text="The Book Founded In Library!i!i!i!" textFill="#fc0202" visible="false" />
+            <Label fx:id="BookNotFoundedLib" layoutX="134.0" layoutY="89.0" prefHeight="17.0" prefWidth="238.0" text="The Book Not Founded In Librirary" textFill="#0400ff" visible="false" />
+            <Label fx:id="CheckIfavailablelab" layoutX="192.0" layoutY="89.0" prefHeight="17.0" prefWidth="265.0" text="please check if the book available in the library!" textFill="#c61212" />
+            <Button fx:id="ChooseFileButton" layoutX="704.0" layoutY="390.0" mnemonicParsing="false" onAction="#ChooseFileMeth" prefHeight="25.0" prefWidth="76.0" text="Choose file" />
+            <Label layoutX="556.0" layoutY="394.0" text="Content book" />
+            <Label fx:id="FileLabel" layoutX="789.0" layoutY="394.0" prefHeight="22.0" prefWidth="108.0" text="no file choosen" textFill="#0037ff" />
+
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

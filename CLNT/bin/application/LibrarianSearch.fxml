@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LibrarianSearchController">
+   <right>
+      <AnchorPane prefHeight="605.0" prefWidth="1351.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="234.0" layoutY="24.0" prefHeight="92.0" prefWidth="591.0" text="      Search a Book" textAlignment="CENTER">
+               <font>
+                  <Font name="Andalus" size="58.0" />
+               </font>
+            </Label>
+            <TextField fx:id="SearchText" layoutX="178.0" layoutY="127.0" prefHeight="25.0" prefWidth="623.0" promptText="Insert text and choose search by: BookName,AuthorName and GenreBook Or you can just type any free words ..." />
+            <Button fx:id="SearchButton" layoutX="808.0" layoutY="127.0" mnemonicParsing="false" onAction="#SearchButtonMeth" prefHeight="25.0" prefWidth="73.0" text="Search" />
+            <ComboBox fx:id="Combox" layoutX="33.0" layoutY="127.0" prefHeight="25.0" prefWidth="138.0" promptText="Search by" />
+            <Button fx:id="BackButton" layoutX="14.0" layoutY="557.0" mnemonicParsing="false" onAction="#BackButtonMeth" prefHeight="30.0" prefWidth="76.0" text="Back" />
+            <Button fx:id="OrderBookButton" layoutX="420.0" layoutY="545.0" mnemonicParsing="false" onAction="#OrderBookMeth" prefHeight="24.0" prefWidth="90.0" text="Order A Book" />
+            <TableView fx:id="BookTableView" layoutX="9.0" layoutY="172.0" prefHeight="333.0" prefWidth="995.0">
+              <columns>
+                <TableColumn fx:id="BookIdCol" prefWidth="82.0" text="BookId" />
+                <TableColumn fx:id="BookNameCol" prefWidth="120.0" text="BookName" />
+                  <TableColumn fx:id="BookAuthorNameCol" prefWidth="143.0" text="BookAuthorName" />
+                  <TableColumn fx:id="BookGenreCol" prefWidth="114.0" text="BookGenre" />
+                  <TableColumn fx:id="BookInShelfCol" prefWidth="78.0" text="BookInShelf" />
+                  <TableColumn fx:id="LocationBookCol" prefWidth="101.0" text="LocationBook" />
+                  <TableColumn fx:id="BookDescriptionCol" prefWidth="275.0" text="BookDescription" />
+                  <TableColumn fx:id="bookCopiesCol" prefWidth="86.0" text="bookCopies" />
+              </columns>
+            </TableView>
+            <Label fx:id="labelpdf" layoutX="286.0" layoutY="518.0" prefHeight="16.0" prefWidth="571.0" text="* You can select any book you want from the table and click the appropriate button below !" textFill="RED">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="openbtn" layoutX="529.0" layoutY="545.0" mnemonicParsing="false" onAction="#openbtnMeth" prefHeight="25.0" prefWidth="101.0" text="View Content" />
+            <Label fx:id="UpdateLabelLabel" layoutX="1135.0" layoutY="66.0" prefHeight="40.0" prefWidth="192.0" text="Update Book Details" visible="false">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.14761904761904762">
+                     <stops>
+                        <Stop color="#0961e3" />
+                        <Stop color="#003886" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="SaveDetailsButton" layoutX="1212.0" layoutY="536.0" mnemonicParsing="false" onAction="#SaveDetailsMeth" prefHeight="25.0" prefWidth="53.0" text="Save" visible="false" />
+            <Button fx:id="UpdateDetailsButton" layoutX="643.0" layoutY="545.0" mnemonicParsing="false" onAction="#UpdateDetailsMeth" prefHeight="25.0" prefWidth="103.0" text="Update Details" />
+            <Label layoutX="22.0" layoutY="24.0" prefHeight="24.0" prefWidth="241.0" text="Hello, Librarian">
+               <textFill>
+                  <RadialGradient centerX="0.5611111111111111" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#0961e3" />
+                        <Stop color="#bf1212" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <font>
+                  <Font name="Andalus" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="logout" layoutX="22.0" layoutY="53.0" mnemonicParsing="false" onAction="#logoutMeth" prefHeight="25.0" prefWidth="67.0" text="LogOut" />
+            <Label fx:id="BookNamelab" layoutX="1022.0" layoutY="179.0" prefHeight="20.0" prefWidth="81.0" text=" Book Name:" textAlignment="CENTER" visible="false" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Separator fx:id="blabel" layoutX="1010.0" layoutY="122.0" orientation="VERTICAL" prefHeight="434.0" prefWidth="7.0" visible="false" />
+            <Label fx:id="BookAuthorNamelab" layoutX="1028.0" layoutY="220.0" prefHeight="20.0" prefWidth="91.0" text="Author Name:" textAlignment="CENTER" visible="false" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="BookGenrelab" layoutX="1028.0" layoutY="266.0" prefHeight="20.0" prefWidth="85.0" text="Genre:" textAlignment="CENTER" visible="false" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="LocationBooklab" layoutX="1028.0" layoutY="307.0" prefHeight="20.0" prefWidth="81.0" text="Location:" textAlignment="CENTER" visible="false" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="copieslab" layoutX="1028.0" layoutY="350.0" prefHeight="20.0" prefWidth="111.0" text="Add Copies(no.)" textAlignment="CENTER" visible="false" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Descriptionlab" layoutX="1029.0" layoutY="424.0" prefHeight="20.0" prefWidth="89.0" text="Description:" textAlignment="CENTER" visible="false" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="BookIdlab" layoutX="1022.0" layoutY="140.0" prefHeight="20.0" prefWidth="81.0" text=" Book Id:" textAlignment="CENTER" visible="false" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="BookIdtext" disable="true" layoutX="1126.0" layoutY="140.0" prefHeight="25.0" prefWidth="205.0" visible="false" />
+            <TextField fx:id="BookNameText" layoutX="1126.0" layoutY="179.0" prefHeight="25.0" prefWidth="205.0" visible="false" />
+            <TextField fx:id="AuthorNameText" layoutX="1126.0" layoutY="221.0" prefHeight="25.0" prefWidth="206.0" visible="false" />
+            <TextField fx:id="GenreText" layoutX="1126.0" layoutY="267.0" prefHeight="25.0" prefWidth="207.0" visible="false" />
+            <TextField fx:id="LocationText" layoutX="1126.0" layoutY="308.0" prefHeight="25.0" prefWidth="209.0" visible="false" />
+            <TextField fx:id="CopiesText" layoutX="1126.0" layoutY="351.0" prefHeight="25.0" prefWidth="210.0" visible="false" />
+            <TextArea fx:id="DescriptionText" layoutX="1126.0" layoutY="391.0" prefHeight="112.0" prefWidth="211.0" visible="false" />
+            <Separator fx:id="alabel" layoutX="1131.0" layoutY="100.0" prefHeight="8.0" prefWidth="177.0" visible="false" />
+            <Button fx:id="CancelBtn" layoutX="1136.0" layoutY="536.0" mnemonicParsing="false" onAction="#CancelBtnMeth" text="Cancel" visible="false" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

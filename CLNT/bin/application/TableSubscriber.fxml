@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TableSubscriberController">
+   <center>
+      <AnchorPane fx:id="TableSubscriberView" prefHeight="529.0" prefWidth="1078.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="TableViewSubscriber" layoutX="15.0" layoutY="33.0" prefHeight="427.0" prefWidth="1052.0">
+              <columns>
+                <TableColumn fx:id="NameSubscriberCol" prefWidth="105.0" text="Name Subscriber" />
+                <TableColumn fx:id="IdSubscriberCol" prefWidth="122.0" text="Id Subscriber" />
+                  <TableColumn fx:id="EmailSubscriberCol" prefWidth="208.0" text="Email Subscriber" />
+                  <TableColumn fx:id="PhoneNumberCol" prefWidth="152.0" text="Phone Number" />
+                  <TableColumn fx:id="SubscriberAddressCol" prefWidth="171.0" text="Subscriber Address" />
+                  <TableColumn fx:id="SubscriberStatusCol" prefWidth="149.0" text="Subscriber Status" />
+                  <TableColumn fx:id="subscriberNumberCol" prefWidth="144.0" text="subscriber Number" />
+              </columns>
+            </TableView>
+            <Button layoutX="29.0" layoutY="475.0" mnemonicParsing="false" onAction="#BackMeth" prefHeight="35.0" prefWidth="85.0" text="Back" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

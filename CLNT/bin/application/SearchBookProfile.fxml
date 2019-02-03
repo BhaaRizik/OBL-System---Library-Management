@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SearchBookProfileController">
+   <bottom>
+      <AnchorPane prefHeight="605.0" prefWidth="1075.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="149.0" layoutY="14.0" prefHeight="92.0" prefWidth="591.0" text="      Search a Book" textAlignment="CENTER">
+               <font>
+                  <Font name="Andalus" size="58.0" />
+               </font>
+            </Label>
+            <TextField fx:id="SearchText" layoutX="178.0" layoutY="127.0" prefHeight="25.0" prefWidth="623.0" promptText="Insert text and choose search by: BookName,AuthorName and GenreBook Or you can just type any free words ..." />
+            <Button fx:id="SearchButton" layoutX="808.0" layoutY="127.0" mnemonicParsing="false" onAction="#SearchButtonMeth" prefHeight="25.0" prefWidth="73.0" text="Search" />
+            <ComboBox fx:id="Combox" layoutX="33.0" layoutY="127.0" prefHeight="25.0" prefWidth="138.0" promptText="Search by" />
+            <Button fx:id="BackButton" layoutX="14.0" layoutY="557.0" mnemonicParsing="false" onAction="#BackButtonMeth" prefHeight="30.0" prefWidth="76.0" text="Back" />
+            <Button fx:id="OrderBookButton" layoutX="423.0" layoutY="543.0" mnemonicParsing="false" onAction="#OrderBookMeth" prefHeight="29.0" prefWidth="90.0" text="Order A Book" visible="false" />
+            <TableView fx:id="BookTableView" layoutX="28.0" layoutY="176.0" prefHeight="333.0" prefWidth="967.0">
+              <columns>
+                <TableColumn fx:id="BookIdCol" prefWidth="82.0" text="BookId" />
+                <TableColumn fx:id="BookNameCol" prefWidth="120.0" text="BookName" />
+                  <TableColumn fx:id="BookAuthorNameCol" prefWidth="143.0" text="BookAuthorName" />
+                  <TableColumn fx:id="BookGenreCol" prefWidth="110.0" text="BookGenre" />
+                  <TableColumn fx:id="BookInShelfCol" prefWidth="126.0" text="BookInShelf" />
+                  <TableColumn fx:id="LocationBookCol" prefWidth="115.0" text="LocationBook" />
+                  <TableColumn fx:id="BookDescriptionCol" prefWidth="265.0" text="BookDescription" />
+              </columns>
+            </TableView>
+            <Label fx:id="labelpdf" layoutX="237.0" layoutY="515.0" prefHeight="16.0" prefWidth="571.0" text="* You can select any book you want from the table and click the appropriate button below !" textFill="RED" visible="false">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="openbtn" layoutX="538.0" layoutY="542.0" mnemonicParsing="false" onAction="#openbtnMeth" prefHeight="30.0" prefWidth="101.0" text="View Content" visible="false" />
+            <Button fx:id="ClosetDateReturn" layoutX="658.0" layoutY="542.0" mnemonicParsing="false" onAction="#ClosetDateReturnMeth" prefHeight="32.0" prefWidth="187.0" text="Closest date of book return" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

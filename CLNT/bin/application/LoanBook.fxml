@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="409.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoanBookController">
+   <children>
+      <Text fill="#bc1111" layoutX="66.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loan Page" textAlignment="CENTER" wrappingWidth="286.4311218261719">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Text>
+      <TextField fx:id="bookFlield" layoutX="37.0" layoutY="93.0" prefHeight="26.0" prefWidth="233.0" promptText="Enter book name" />
+      <Button fx:id="searchBook" layoutX="281.0" layoutY="93.0" mnemonicParsing="false" onAction="#searchBookToLoan" text="SearchBook" />
+      <Button fx:id="back" layoutX="35.0" layoutY="466.0" mnemonicParsing="false" onAction="#backFromLoanPage" prefHeight="31.0" prefWidth="72.0" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="edition" layoutX="43.0" layoutY="155.0" text="Book Edition :" textFill="#b92c2c" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="name" layoutX="43.0" layoutY="179.0" text="Book name :" textFill="#b92c2c" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="author" layoutX="42.0" layoutY="202.0" text="Authr name :" textFill="#b92c2c" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="genreL" layoutX="40.0" layoutY="226.0" text="Genre :" textFill="#b92c2c" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="des" layoutX="41.0" layoutY="413.0" prefHeight="26.0" prefWidth="100.0" text="Descriptoin :" textFill="#b92c2c" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="printDate" layoutX="41.0" layoutY="333.0" text="Printe date :" textFill="#b92c2c" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="copy" layoutX="41.0" layoutY="253.0" prefHeight="20.0" prefWidth="102.0" text="Copy quantity :" textFill="#b92c2c" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="bookID" layoutX="173.0" layoutY="156.0" text="bookEL" visible="false" />
+      <Label fx:id="bookName" layoutX="174.0" layoutY="180.0" text="nameEL" visible="false" />
+      <Label fx:id="authorName" layoutX="173.0" layoutY="203.0" text="authorEL" visible="false" />
+      <Label fx:id="genre" layoutX="173.0" layoutY="227.0" text="genreEL" visible="false" />
+      <Label fx:id="copyQuantity" layoutX="172.0" layoutY="255.0" text="copyEL" visible="false" />
+      <Label fx:id="shelfEL" layoutX="170.0" layoutY="283.0" text="shelfEL" visible="false" />
+      <Label fx:id="postionEL" layoutX="171.0" layoutY="308.0" prefHeight="20.0" prefWidth="100.0" text="position" visible="false" />
+      <Label fx:id="printELE" layoutX="170.0" layoutY="333.0" prefHeight="18.0" prefWidth="133.0" text="printELE" visible="false" />
+      <Label fx:id="catalogEL" layoutX="170.0" layoutY="358.0" prefHeight="20.0" prefWidth="51.0" text="catalogEL" visible="false" />
+      <Label fx:id="purchaseEL" layoutX="170.0" layoutY="387.0" text="purchaseEL" visible="false" />
+      <Label fx:id="shelf" layoutX="40.0" layoutY="282.0" text="Books in shelf :" textFill="#b92c2c" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="psition" layoutX="40.0" layoutY="308.0" text="Position :" textFill="#b92c2c" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="catalogDate" layoutX="40.0" layoutY="358.0" text="Catalog Number :" textFill="#b92c2c" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="purchseDate" layoutX="41.0" layoutY="386.0" text="Purchase Date :" textFill="#b92c2c" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="description" layoutX="169.0" layoutY="415.0" prefHeight="25.0" prefWidth="217.0" text="description" visible="false" />
+   </children>
+</AnchorPane>
